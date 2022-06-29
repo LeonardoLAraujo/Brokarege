@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" pickOnBounds="false" prefHeight="400.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.estudo.n2_javafx.MenuController">
+   <children>
+      <Label fx:id="lblAddTrader" layoutX="251.0" layoutY="97.0" text="Cadastrar Trader">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblAddOrder" ellipsisString="" layoutX="259.0" layoutY="223.0" prefHeight="20.0" prefWidth="128.0" text="Cadastrar Order">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblAddTrade" layoutX="250.0" layoutY="161.0" text="Cadastrar Papel">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblConsultar" layoutX="280.0" layoutY="288.0" text="Consultar">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblAddSair" layoutX="299.0" layoutY="350.0" text="Sair">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="btnAddTrader" layoutX="232.0" layoutY="120.0" mnemonicParsing="false" onAction="#btnAddTraderClick" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: #00b800;" text="Cadastrar Trader" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnAddTrade" layoutX="233.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnAddTradeClick" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: #00b800;" text="Cadastrar Papel" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnAddOrder" layoutX="234.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnAddOrderClick" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: #00b800;" text="Cadastrar Order" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSair" layoutX="232.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnSairClick" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: red;" text="Sair" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnConsulta" layoutX="232.0" layoutY="312.0" mnemonicParsing="false" onAction="#btnConsultaClick" prefHeight="27.0" prefWidth="171.0" style="-fx-background-color: blue;" text="Consulta" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Pane layoutY="56.0" prefHeight="6.0" prefWidth="661.0" style="-fx-background-color: black;" />
+      <Label layoutX="240.0" layoutY="14.0" prefHeight="38.0" prefWidth="191.0" text="Brokerage">
+         <font>
+            <Font name="Bauhaus 93" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

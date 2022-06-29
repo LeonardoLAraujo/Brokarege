@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="296.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.estudo.n2_javafx.AddTraderController">
+   <children>
+      <Label layoutX="242.0" layoutY="14.0" text="Add Trader">
+         <font>
+            <Font name="Bauhaus 93" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="264.0" layoutY="104.0" text="Name Trader">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="190.0" layoutY="136.0" prefHeight="25.0" prefWidth="254.0" />
+      <Button fx:id="btnInsert" layoutX="168.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnInsertClick" prefHeight="34.0" prefWidth="149.0" style="-fx-background-color: #00b800;" text="Adicionar Trader" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="-119.0" layoutY="52.0" prefHeight="6.0" prefWidth="807.0" style="-fx-background-color: black;" />
+      <Button fx:id="btnCancelar" layoutX="336.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnCancelarClick" prefHeight="34.0" prefWidth="143.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

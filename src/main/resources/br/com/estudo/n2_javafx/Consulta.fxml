@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.estudo.n2_javafx.ConsultaController">
+   <children>
+      <TableView fx:id="tblOrder" editable="true" layoutX="3.0" layoutY="10.0" prefHeight="464.0" prefWidth="452.0">
+        <columns>
+          <TableColumn fx:id="colSelecionado" prefWidth="23.0" />
+          <TableColumn fx:id="colId" prefWidth="40.0" text="ID" />
+            <TableColumn fx:id="colTrader" prefWidth="110.0" text="Trader" />
+            <TableColumn fx:id="colPapel" prefWidth="93.0" text="Papel" />
+            <TableColumn fx:id="colQuantidade" prefWidth="96.0" text="Quantidade" />
+            <TableColumn fx:id="colValor" prefWidth="89.0" text="Valor" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtPesquisar" layoutX="463.0" layoutY="10.0" prefHeight="25.0" prefWidth="96.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <Button fx:id="btnPesquisar" layoutX="564.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPesquisarClick" prefHeight="29.0" prefWidth="72.0" style="-fx-background-color: #00b800;" text="Pesquisar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnAlterar" layoutX="463.0" layoutY="95.0" mnemonicParsing="false" onAction="#btnAlterarClick" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: blue;" text="Alterar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnApagar" layoutX="463.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnApagarClick" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: red;" text="Apagar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnVoltar" layoutX="459.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnVoltarClick" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: black;" text="Voltar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnAtualizar" layoutX="464.0" layoutY="209.0" mnemonicParsing="false" onAction="#btnAtualizarClick" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: #00b800;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
